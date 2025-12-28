@@ -1,12 +1,12 @@
 {{- define "partials/author-link" -}}
 {{ $p := site.GetPage "" }}
-{{- $isCoFirst := (strings.HasSuffix . "#") -}}
+{{- $isCoFirst := (strings.HasSuffix . "†") -}}
 {{- $isCorresponding := (strings.HasSuffix . "*") -}}
-{{- $authorId := . | strings.TrimRight "#" | strings.TrimRight "*" -}}
+{{- $authorId := . | strings.TrimRight "†" | strings.TrimRight "*" -}}
 {{- $author := (index site.Data.people $authorId)}}
 {{- $suffix := "" -}}
 {{- if $isCoFirst -}}
-{{- $suffix = (printf "%s%s" $suffix "<sup>#</sup>") -}}
+{{- $suffix = (printf "%s%s" $suffix "<sup>†</sup>") -}}
 {{- end -}}
 {{- if $isCorresponding -}}
 {{- $suffix = (printf "%s%s" $suffix "<sup>*</sup>") -}}

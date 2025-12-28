@@ -2,7 +2,7 @@
 {{ $p := site.GetPage "" }}
 {{- $hasEqualContrib := false -}}
 {{- range .authors -}}
-{{- if strings.HasSuffix . "#" -}}
+{{- if strings.HasSuffix . "†" -}}
 {{- $hasEqualContrib = true -}}
 {{- end -}}
 {{- end -}}
@@ -35,7 +35,7 @@
 <span class="pub-award"><strong>{{ .award }}</strong></span>
 {{- end -}}
 {{- if $hasEqualContrib -}}
-<span class="pub-equal-contrib">(# equal contribution)</span>
+<span class="pub-equal-contrib">(† equal contribution)</span>
 {{- end -}}
 {{- end -}}
 
