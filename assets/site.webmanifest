@@ -1,12 +1,12 @@
 {
-    "name": "Yirui He's Scholar Profile",
+    "name": "Homepage of Jiahong Xiang",
     "lang": "en-US",
-    "theme_color": "#6d90d6",
+    "theme_color": "#002244",
     "icons": [
       {
         "src": "images/sustech-logo-standalone.png",
         "sizes": "any",
-        "type": "image/svg+xml"
+        "type": "image/png"
       }
     ]
   }
